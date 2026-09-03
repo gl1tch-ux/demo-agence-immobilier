@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Immobilière - Vente, Location, Gestion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Immo<span>Maroc</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Accueil</a></li>
+                    <li><a href="#properties">Biens</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-primary" style="padding: 8px 15px;">Estimation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Trouvez la propriété de<br>vos rêves</h1>
+            <p>Une large sélection d'appartements, villas et bureaux à vendre et à louer au Maroc.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-box">
+                <div class="search-field">
+                    <label>Localisation</label>
+                    <input type="text" placeholder="Ville, Quartier...">
+                </div>
+                <div class="search-field">
+                    <label>Type de bien</label>
+                    <select>
+                        <option value="">Tous</option>
+                        <option value="appartement">Appartement</option>
+                        <option value="villa">Villa</option>
+                        <option value="bureau">Bureau</option>
+                        <option value="terrain">Terrain</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label>Budget Max</label>
+                    <select>
+                        <option value="">Indifférent</option>
+                        <option value="500000">500 000 DH</option>
+                        <option value="1000000">1 000 000 DH</option>
+                        <option value="2000000">2 000 000 DH</option>
+                        <option value="5000000">5 000 000 DH+</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary"><i class="fas fa-search"></i> Rechercher</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Stats -->
+    <section id="stats" class="section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-home"></i>
+                    <h3>500+</h3>
+                    <p>Biens vendus</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>1200+</h3>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <h3>15+</h3>
+                    <p>Années d'expérience</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>50+</h3>
+                    <p>Villes couvertes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Biens Immobiliers</h2>
+                <span></span>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="vente">Acheter</button>
+                <button class="filter-btn" data-filter="location">Louer</button>
+                <button class="filter-btn" data-filter="neuf">Neuf</button>
+            </div>
+
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-category="vente">
+                    <div class="card-image">
+                        <span class="tag">Vente</span>
+                        <span class="price">1 200 000 DH</span>
+                        <img src="https://picsum.photos/seed/house1/400/300" alt="Villa Moderne">
+                    </div>
+                    <div class="card-content">
+                        <h3>Villa Moderne avec Piscine</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Californie</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 4 Ch.</span>
+                            <span><i class="fas fa-bath"></i> 3 Sdb.</span>
+                            <span><i class="fas fa-ruler-combined"></i> 350 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card" data-category="location">
+                    <div class="card-image">
+                        <span class="tag tag-rent">Location</span>
+                        <span class="price">8 000 DH/mois</span>
+                        <img src="https://picsum.photos/seed/apt1/400/300" alt="Appartement F3">
+                    </div>
+                    <div class="card-content">
+                        <h3>Appartement F3 Haut Standing</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Rabat, Agdal</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 3 Ch.</span>
+                            <span><i class="fas fa-bath"></i> 2 Sdb.</span>
+                            <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card" data-category="neuf">
+                    <div class="card-image">
+                        <span class="tag tag-new">Neuf</span>
+                        <span class="price">850 000 DH</span>
+                        <img src="https://picsum.photos/seed/house2/400/300" alt="Appartement Neuf">
+                    </div>
+                    <div class="card-content">
+                        <h3>Appartement en Résidence Fermée</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Tanger, Malabata</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 2 Ch.</span>
+                            <span><i class="fas fa-bath"></i> 1 Sdb.</span>
+                            <span><i class="fas fa-ruler-combined"></i> 90 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card" data-category="vente">
+                    <div class="card-image">
+                        <span class="tag">Vente</span>
+                        <span class="price">4 500 000 DH</span>
+                        <img src="https://picsum.photos/seed/villa1/400/300" alt="Villa Luxe">
+                    </div>
+                    <div class="card-content">
+                        <h3>Villa de Luxe Vue Mer</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Marrakech, Palmeraie</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 6 Ch.</span>
+                            <span><i class="fas fa-bath"></i> 5 Sdb.</span>
+                            <span><i class="fas fa-ruler-combined"></i> 800 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card" data-category="location">
+                    <div class="card-image">
+                        <span class="tag tag-rent">Location</span>
+                        <span class="price">25 000 DH/mois</span>
+                        <img src="https://picsum.photos/seed/office1/400/300" alt="Bureau">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bureau Open Space Meublé</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Marina</p>
+                        <div class="features">
+                            <span><i class="fas fa-building"></i> Etage 4</span>
+                            <span><i class="fas fa-ruler-combined"></i> 200 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card" data-category="vente">
+                    <div class="card-image">
+                        <span class="tag">Vente</span>
+                        <span class="price">600 000 DH</span>
+                        <img src="https://picsum.photos/seed/house3/400/300" alt="Terrain">
+                    </div>
+                    <div class="card-content">
+                        <h3>Terrain Constructible</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Temara, Ocean</p>
+                        <div class="features">
+                            <span><i class="fas fa-ruler-combined"></i> 500 m²</span>
+                            <span><i class="fas fa-file-alt"></i> Titré</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-primary">Voir tous les biens</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Services</h2>
+                <span></span>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Achat / Vente</h3>
+                    <p>Nous vous accompagnons dans toutes les étapes de l'achat ou de la vente de votre bien immobilier.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-key"></i>
+                    <h3>Location</h3>
+                    <p>Un large choix de locations pour particuliers et professionnels avec gestion des dossiers.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Estimation</h3>
+                    <p>Évaluez gratuitement la valeur de marché de votre bien par nos experts.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Gestion Locative</h3>
+                    <p>Nous gérons vos biens locatifs pour garantir une rentabilité optimale et tranquillité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/realtor/600/400" alt="Notre Agence">
+                </div>
+                <div class="about-content">
+                    <h2>Pourquoi choisir ImmoMaroc ?</h2>
+                    <p style="margin-bottom: 20px;">Avec plus de 15 ans d'expérience sur le marché immobilier marocain, nous offrons un service personnalisé et professionnel pour vous aider à réaliser votre projet.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Expertise locale approfondie</li>
+                        <li><i class="fas fa-check-circle"></i> Réseau de confiance</li>
+                        <li><i class="fas fa-check-circle"></i> Transparence totale</li>
+                        <li><i class="fas fa-check-circle"></i> Accompagnement juridique</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 20px;">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages Clients</h2>
+                <span></span>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Une équipe très professionnelle. J'ai vendu mon appartement à Casablanca en moins de 2 mois."</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/client1/50/50" alt="Client">
+                        <div>
+                            <h4>Fadila B.</h4>
+                            <small>Vendeuse</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Service impeccable pour la location de mon bureau. Réactivité et efficacité au rendez-vous."</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/client2/50/50" alt="Client">
+                        <div>
+                            <h4>Ahmed K.</h4>
+                            <small>Entrepreneur</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"J'ai trouvé ma maison de rêve grâce à ImmoMaroc. L'agent a parfaitement compris mes besoins."</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/client3/50/50" alt="Client">
+                        <div>
+                            <h4>Samir O.</h4>
+                            <small>Acheteur</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-nous</h2>
+                <span></span>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Parlons de votre projet</h3>
+                    <p style="margin-bottom: 30px;">Remplissez le formulaire ci-contre ou contactez-nous directement.</p>
+                    
+                    <div class="info-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adresse :</strong>
+                            <p>123 Av. Hassan II, Casablanca, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone :</strong>
+                            <p>+212 5 22 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email :</strong>
+                            <p>contact@immomaroc.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-icons" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <form onsubmit="event.preventDefault(); alert('Message envoyé avec succès!');">
+                        <div class="form-row">
+                            <input type="text" placeholder="Votre Nom" required>
+                            <input type="email" placeholder="Votre Email" required>
+                        </div>
+                        <input type="text" placeholder="Sujet" required>
+                        <textarea rows="5" placeholder="Votre Message" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">Immo<span>Maroc</span></div>
+                    <p>Votre partenaire de confiance pour l'immobilier au Maroc. Nous faisons de chaque transaction une expérience réussie.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#properties">Biens</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Types de biens</h4>
+                    <ul>
+                        <li><a href="#">Appartements</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Bureaux & Locaux</a></li>
+                        <li><a href="#">Terrains</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Abonnez-vous pour recevoir nos dernières offres.</p>
+                    <div style="display: flex; margin-top: 10px;">
+                        <input type="email" placeholder="Votre email" style="padding: 10px; border: none; border-radius: 5px 0 0 5px; width: 100%;">
+                        <button class="btn btn-primary" style="border-radius: 0 5px 5px 0;"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ImmoMaroc. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
